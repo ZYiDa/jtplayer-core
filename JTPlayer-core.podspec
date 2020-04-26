@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   # ――― 源码位置 ――――――――― #
   spec.source       = { :git => "https://github.com/ZYiDa/jtplayer-core.git", :tag => "#{spec.version}" }
   # ――― Source Code ――――――― #
-  spec.source_files  = "JTPlayer-core/*.{h,m,a}","JTPlayer-core/Masonry/*.{h.m}"
+  spec.source_files  = "JTPlayer-core/*.{h,m,a,xcassets}","JTPlayer-core/Masonry/*.{h.m}"
   # ――― Project Linking 项目引用 ――――――― #
   spec.frameworks = "Foundation", "UIKit"
   # ――― Project Settings  设置――――――――― #
