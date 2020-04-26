@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nof-Yl-dlh">
+                                <rect key="frame" x="100.5" y="772" width="213" height="44"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Any-XJ-A9c"/>
+                                    <constraint firstAttribute="width" constant="213" id="cKf-PI-o3s"/>
+                                </constraints>
+                                <state key="normal" title="本地高清视频">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextVideoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdU-gM-LOQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ca-Ej-5Bw">
+                                <rect key="frame" x="100" y="688" width="214" height="44"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="O1b-EG-IYZ"/>
+                                    <constraint firstAttribute="height" constant="44" id="lGQ-nk-saK"/>
+                                </constraints>
+                                <state key="normal" title="实时视频">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="realtimeVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djA-ZW-iwd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCJ-fI-4Wx">
+                                <rect key="frame" x="100" y="604" width="214" height="44"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="AeG-jN-Qo7"/>
+                                    <constraint firstAttribute="height" constant="44" id="nxr-xA-3r1"/>
+                                </constraints>
+                                <state key="normal" title="硬解码本地高清视频">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="videotoolboxAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ldx-du-cc2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z06-sG-TbL">
+                                <rect key="frame" x="100" y="520" width="214" height="44"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7fu-3a-bxp"/>
+                                    <constraint firstAttribute="width" constant="214" id="Rpx-Bh-TZ9"/>
+                                </constraints>
+                                <state key="normal" title="开启/关闭Log信息">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logShowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="unN-fj-NTx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nof-Yl-dlh" secondAttribute="bottom" constant="46" id="93a-OR-tUO"/>
+                            <constraint firstItem="Nof-Yl-dlh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DDx-US-ecI"/>
+                            <constraint firstItem="Nof-Yl-dlh" firstAttribute="top" secondItem="4ca-Ej-5Bw" secondAttribute="bottom" constant="40" id="GBM-k4-I80"/>
+                            <constraint firstItem="dCJ-fI-4Wx" firstAttribute="top" secondItem="z06-sG-TbL" secondAttribute="bottom" constant="40" id="Gat-hh-Lar"/>
+                            <constraint firstItem="4ca-Ej-5Bw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GhO-K0-KhD"/>
+                            <constraint firstItem="dCJ-fI-4Wx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TTg-JS-tmo"/>
+                            <constraint firstItem="4ca-Ej-5Bw" firstAttribute="top" secondItem="dCJ-fI-4Wx" secondAttribute="bottom" constant="40" id="gVr-Gc-iJg"/>
+                            <constraint firstItem="z06-sG-TbL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rKi-oB-oD3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
